@@ -3,6 +3,7 @@ package com.lovesosoi.new_vision.fragment;
 
 import android.os.Bundle;
 
+import com.gyf.barlibrary.ImmersionBar;
 import com.lovesosoi.new_vision.R;
 import com.lovesosoi.new_vision.base.BaseFragment;
 
@@ -15,6 +16,7 @@ public class CateFragment  extends BaseFragment {
     @Override
     protected void immersionInit() {
 
+        ImmersionBar.with(this).init();
     }
 
     public static CateFragment newInstance() {
